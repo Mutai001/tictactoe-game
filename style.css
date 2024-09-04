@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background: #d4d4d4;
+}
+
+.cell:active {
+    transform: scale(0.98);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
